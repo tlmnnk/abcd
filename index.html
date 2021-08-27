@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      height: 1800px;
+    }
+  </style>
+</head>
+<body>
+  <button class="openBtn">Open Widget</button>
+  <script src="https://e3cd-93-81-242-189.ngrok.io/assets/widget/script.js" type="text/javascript"></script>
+  <script>
+    (function(){
+      window.onload = function() {
+        // Specify your widget restaurant name
+        GeCoWidget.init('geco-ru');
+        // Specify selector to add listener to open the widget
+        GeCoWidget.addListener('.openBtn');
+      }
+    })();
+  </script>
+</body>
+</html>
